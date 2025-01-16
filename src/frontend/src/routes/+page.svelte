@@ -21,7 +21,7 @@
 		const mazeString = getMazeString();
 		console.log($maze);
 		console.log(mazeString);
-		await fetch('/api/maze', {
+		await fetch('http://localhost:3000/api/maze', {
 			method: 'POST',
 			body: JSON.stringify({ maze: mazeString }),
 			headers: {

@@ -9,7 +9,7 @@ export class Cell {
 	isStart: boolean = false;
 
 	toString(): string {
-		return `${+this.up}${+this.right}${+this.down}${+this.left}${+this.isEnd}${+this.isStart}`;
+		return `${+!this.up}${+!this.right}${+!this.down}${+!this.left}${+this.isEnd}${+this.isStart}`;
 	}
 
 	static fromString(str: string): Cell {
